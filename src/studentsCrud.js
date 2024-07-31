@@ -3,6 +3,7 @@ import {
 } from 'mongodb';
 
 
+
 export async function connectToCluster(uri) {
     let mongoClient;
 
@@ -21,7 +22,8 @@ export async function connectToCluster(uri) {
 
 
 export async function executeStudentCrudOperations() {
-    const uri = process.env.DB_URI;
+    // const uri = process.env.DB_URI;
+    const uri = "mongodb+srv://mongo:<pass>@cluster0.mbvfduq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
     let mongoClient;
 
     try {
